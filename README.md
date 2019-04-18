@@ -34,3 +34,6 @@ Step 3: type "npm install" and press enter to install the necessary dependencies
 Step 4: type "npm start" and press enter to start the server.
 
 Step 5: now the application should prompt in your browser. If not, type "http://localhost:3000" in your browser to view the application.
+
+To make this application work properly, please go to the file "./src/components/navigaterComponent/news.js" and add your google news API key in the fetch function at line 22. To be more specific, the fetch function is the same as the following code, and your API key should placed between "apiKey=" and "')".
+    fetch('https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=')
