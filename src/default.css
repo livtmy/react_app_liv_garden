@@ -1,0 +1,137 @@
+.body {
+    min-height: 100%;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background: powderblue;
+    color: #ffffff;
+}
+
+header .logo {
+    position: absolute;
+    top: 30%; left: 80px;
+    font: bold 40px "Times New Roman";
+}
+
+main {
+    position: relative;
+    float: left;
+    width: 72%;
+    height: auto;
+    padding: 15px;
+    color: #666666;
+}
+
+.postAbstract {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+h1, h3 {
+    color: #229988;
+}
+
+.postAbstract h1 {
+    position: static;
+    width: 100%;
+}
+
+.postAbstract img {
+    position: relative;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.postAbstract p {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    width: 60%;
+    top: 20px;
+}
+
+nav {
+    float:right;
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.news {
+    position: relative;
+    left: -30px; top: 25px;
+    color: #666666;
+}
+
+nav .googlenews {
+    position: relative;
+    left: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.link {
+    position: relative;
+    left: 20%;
+    color: #229988;
+    font-style: italic;
+}
+
+.news ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.news ul a {
+    color: #666666;
+}
+
+.postPage {
+    font-size: 20px;
+}
+
+.postPage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.postPage div {
+    position: relative;
+    padding: 20px;
+}
+
+.postPage div p {
+    margin-bottom: 15px;
+}
+
+footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    border-top: 3px solid #229988;
+    background: powderblue;
+}
+
+footer .copyright {
+    position: absolute;
+    top: 40%; right: 20px;
+    font: bold 20px "Times New Roman", serif;
+    font-style: italic;
+}
