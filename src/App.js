@@ -7,7 +7,6 @@ import {
 
 import Header from './components/headerComponent/header';
 import Footer from './components/footerComponent/footer';
-import Navigate from './components/navigaterComponent/navigater';
 import Homepage from './components/pages/homePage';
 import Postpage from './components/pages/postPage';
 
@@ -16,28 +15,20 @@ import './default.css';
 class App extends Component {
   render() {
     return (
+      <Router>
+        <div className="App">
+          <div className="body">
 
-      <div className="App">
-
-        <div className="body">
-
-          <Header />
-
-          <Router>
+            <Header />
 
             <Route exact path='/' component={Homepage} />
             <Route exact path='/post' component={Postpage} />
 
-            <Navigate />
+            <Footer />
 
-          </Router>
-
-          <Footer />
-
+          </div>
         </div>
-
-      </div>
-
+      </Router>
     );
   }
 }

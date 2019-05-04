@@ -5,10 +5,7 @@ class Post extends Component {
 
   render() {
       var data = {
-          title: this.props.title,
-          date: this.props.date,
-          image: this.props.image,
-          content: this.props.content,
+          index: this.props.index,
       };
 
       let path = {
@@ -17,12 +14,10 @@ class Post extends Component {
       };
 
     return (
-      <div className="postAbstract">
 
-        <Link to={path}><h1>{this.props.title}</h1></Link>
-        <p>{this.props.date}</p>
-        <p>{this.props.summary}</p>
-        <img src={this.props.image} alt="Post image" width="27%" height="60%" />
+      <div className="flowerImageLink">
+
+        <Link to={path}><img src={this.props.image} alt="Post image" width="320px" height="240px" /></Link>
 
       </div>
 

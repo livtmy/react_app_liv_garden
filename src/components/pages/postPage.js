@@ -2,19 +2,46 @@ import React, { Component } from 'react';
 
 class Postpage extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    this.getNews();
+  }
+
+  getNews() {
+    var baseURL = 'http://192.168.99.100:49160/flowers/';
+    var index = this.props.location.state.index;
+    var url = baseURL + index;
+    fetch(url)
+      .then(data => data.json())
+      .then(data => {
+        this.setState({
+          flowerInfo: data,
+        })
+      })
+  }
+
   render() {
+    if (!this.state.flowerInfo) {
+      return <p>Loading...</p>
+    }
     return (
-      <div className="postPage">
+      <div className="flowerInfo">
         <main>
-          <h1 className="center">{this.props.location.state.title}</h1>
-          <p className="center">{this.props.location.state.date}</p>
-          <img src={this.props.location.state.image} alt="Post image" width="320px" height="240px" />
+
+          <h1>{this.state.flowerInfo.name}</h1>
+
+          <img src={this.state.flowerInfo.image} alt="Post image" width="320px" height="240px" />
+
           <div>
-            {this.props.location.state.content.map(paragraph => {
-                return (<p>{paragraph}</p>);
-              })
-            }
+
+            <p>{this.state.flowerInfo.desc}</p>
+
           </div>
+
         </main>
       </div>
     );
