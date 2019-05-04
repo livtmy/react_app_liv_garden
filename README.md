@@ -1,33 +1,33 @@
-# Liv's Blog
+# Liv's Garden
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## To run this application locally
 
-You need to have Node.js installed in your machine so that you can use the "npm" command. Then follow along the instructions below.
+You need to have Node.js installed in your machine so that you can use the "npm" command. You also need to run the [service](https://github.com/livtmy/docker_web_service) using docker on your local machine. Then follow along the instructions below.
 
 ### `Download source code through Git`
 
 Step 1: click the "Clone or download" button on the upper right side of this webpage.
 
-Step 2: choose "use HTTPS" instead of "use SSH"
+Step 2: choose "use HTTPS" instead of "use SSH".
 
-Step 3: copy the url from the edit text
+Step 3: copy the url from the edit text.
 
-Step 4: open Git Bash on your device
+Step 4: open Git Bash on your device.
 
-Step 5: navigate to the file that you want to store the source code of this application using the "cd" command
+Step 5: navigate to the file that you want to store the source code of this application using the "cd" command.
 
 Step 6: type "git clone <url>", replace "<url>" with the url copied from Github; and press enter.
 
-Now all the source code is downloaded to your local machine in a file named "my_first_react_app" in the file you specified.
+Now all the source code is downloaded to your local machine in a file named "react_app_liv_garden" in the file you specified.
 
 
 ### `Install dependencies and start the application`
 
 Step 1: open your Command Prompt.
 
-Step 2: navigate to the file named "my_first_react_app".
+Step 2: navigate to the file named "react_app_liv_garden".
 
 Step 3: type "npm install" and press enter to install the necessary dependencies.
 
@@ -35,5 +35,3 @@ Step 4: type "npm start" and press enter to start the server.
 
 Step 5: now the application should prompt in your browser. If not, type "http://localhost:3000" in your browser to view the application.
 
-To make this application work properly, please go to the file "./src/components/navigaterComponent/news.js" and add your google news API key in the fetch function at line 22. To be more specific, the fetch function is the same as the following code, and your API key should placed between "apiKey=" and "')".
-    fetch('https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=')
